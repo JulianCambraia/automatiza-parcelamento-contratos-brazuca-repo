@@ -25,7 +25,6 @@ public class ContratoService {
 			cal.setTime(contrato.getDataContrato());
 			cal.add(Calendar.MONTH, 1);
 			contrato.setDataContrato(cal.getTime());
-			// LocalDate newDataContrato = LocalDate.now().plusMonths(i);
 
 			contratoParcela = new ContratoParcela(valorParcela, contrato.getDataContrato());
 			contrato.adicionarParcelasContrato(contratoParcela);
